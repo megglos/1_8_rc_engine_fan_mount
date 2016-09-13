@@ -18,12 +18,12 @@ difference() {
     translate([3,18,0]) rotate([90,0,0]) cylinder(h = 36, r = 23);    
     // fan flow cuts
     hull() {
-        translate([11,16,21])rotate([0,-14,0]) rotate([0,0,18]) cube(center = true,size = [52,10,10]);
-        translate([11,-16,21])rotate([0,-14,0]) rotate([0,0,-18]) cube(center = true,size = [52,10,10]);
+        translate([11,16,21]) rotate([0,-12,18]) cube(center = true,size = [52,10,10]);
+        translate([11,-16,21]) rotate([0,-12,-18]) cube(center = true,size = [52,10,10]);
     }
     hull() {
-        translate([11,16,-21])rotate([0,14,0]) rotate([0,0,18]) cube(center = true,size = [52,10,10]);
-        translate([11,-16,-21])rotate([0,14,0]) rotate([0,0,-18]) cube(center = true,size = [52,10,10]);
+        translate([11,16,-21]) rotate([0,12,18]) cube(center = true,size = [52,10,10]);
+        translate([11,-16,-21]) rotate([0,12,-18]) cube(center = true,size = [52,10,10]);
     }
     // screwholes
     translate([-25,16,16]) rotate([0,90,0]) cylinder(h = 20, r = 1.5);
