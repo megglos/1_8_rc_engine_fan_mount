@@ -8,12 +8,6 @@ difference() {
     translate([-25,0,0]) rotate([90,0,90]) cylinder(h = 23, r1 = 18, r2 = 22);
     // half body cut
     translate([13,0,0]) cube(center = true,size = [32,60,55]);
-    // front top & bottom cut
-    translate([0,0,32])rotate([0,75,0]) cube(center = true,size = [10,52,52]);
-    translate([0,0,-32])rotate([0,-75,0]) cube(center = true,size = [10,52,52]);
-    // back cut
-    translate([22,0,0]) cube(center = true,size = [10,52,52]);
-    translate([18,0,0]) cube(center = true,size = [10,52,36]);
     // center cylinder cut
     translate([3,18,0]) rotate([90,0,0]) cylinder(h = 36, r = 23);    
     // fan flow cuts
