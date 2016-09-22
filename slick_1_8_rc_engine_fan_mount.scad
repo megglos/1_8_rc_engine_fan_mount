@@ -22,6 +22,11 @@ difference() {
     translate([3,30,0]) rotate([90,0,0]) cylinder(h = 60, r = 21);
     // fan hole cylinder
     translate([-25,0,0]) rotate([90,0,90]) cylinder(h = 23, r1 = 18, r2 = 22);
+    translate([-13,0,0.2]) rotate([0,-90,0]) difference() {
+        cylinder(h = 23, r1 = 22, r2 = 14);
+        translate([-18,-23.5,0]) cube(size = [36,10,23]);
+        translate([-18,13.5,0]) cube(size = [36,10,23]);
+    }
     // half body cut
     translate([13,0,0]) cube(center = true,size = [32,60,60]);
     // front top & bottom cut
@@ -62,3 +67,4 @@ difference() {
     }
 } 
 translate([-15,-2.5,24]) rotate([155,0,90]) triangle(5,5,0.4);
+
